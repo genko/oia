@@ -9,8 +9,7 @@ function Object:clone()
 end
 
 function Object:print()
-	self:print()
-	print("\n")
+	
 end
 
 function Object:println()
@@ -21,3 +20,4 @@ end
 function Object:updateSlot(name, value)
 	self[name] = value
 end
+
