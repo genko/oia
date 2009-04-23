@@ -9,7 +9,9 @@ function Object:clone()
 end
 
 function Object:print()
-	
+	for i, v in self do
+		print()
+	end
 end
 
 function Object:println()

@@ -2,12 +2,13 @@
 True = Object:clone();
 
 function True:ifTrue(f1, f2)
-	if(f1) return f1();
-	return nil;
+	return f1();
 end
 
 function True:ifFalse(f1, f2)
-	if(f2) return f2();
+	if(f2) then 
+		return f2() 
+	end
 	return Nil;
 end
 
