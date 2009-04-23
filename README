@@ -1,0 +1,4 @@
+A project to port a subset of the Io programming language to Lua.
+
+The idea is to keep most of Io's semantics - pure OO, everything is a message send but drop the lazy evaluation and instead use blocks for control structures in order to gain speed and more directly map to Lua.
+
