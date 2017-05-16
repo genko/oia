@@ -6,7 +6,7 @@ function IString:with(v)
 	return o
 end
 	
-function IString:add(v)
+function IString:concat(v)
 	return IString:with(self.value .. v.value)
 end
 

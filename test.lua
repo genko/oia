@@ -3,7 +3,7 @@ dofile("Oia.lua");
 
 Person = Object:clone();
 Person:newSlot("name", "Betrand");
-Person:updateSlot("name", "Herbert");
+Person:updateSlot("name", IString:with("Herbert"));
 
 print(Person:getSlot("name"));
 Person:print();
@@ -17,5 +17,7 @@ n1:add(n2):print()
 
 Person:newSlot("cool",  IString:with("cooler"));
 Person:getSlot("cool"):print()
+Person:print();
+IString:with("Hello"):concat(IString:with(" World!")):print()
 
 --foo = { a: 123};

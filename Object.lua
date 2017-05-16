@@ -11,7 +11,8 @@ end
 function Object:print()
 	print("Object")
 	for i, v in pairs(self) do
-		print("  " .. i .. ":" .. v);
+		io.write("  " .. i .. ":")
+    v:print();
 	end
 	return self;
 end
