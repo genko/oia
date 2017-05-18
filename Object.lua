@@ -40,3 +40,8 @@ end
 function Object:getSlot(name, value)
 	return self["_" .. name];
 end
+
+function Object:getType()
+	return "Object";
+end
+

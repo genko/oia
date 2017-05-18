@@ -22,6 +22,11 @@ function Number:decrement()
 	return Number:with(self.value - 1)
 end
 
+function Number:getType()
+	return "Number"
+end
+
+
 function Number:print()
 	print(self.value)
 end
